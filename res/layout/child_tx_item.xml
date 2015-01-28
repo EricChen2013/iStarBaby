@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg2_repeat" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/chilad_tx_list_cont"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/child_hc_date"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:gravity="right"
+            android:text="3周岁"
+            android:textColor="@color/istar_b" />
+
+        <TextView
+            android:id="@+id/child_hc_eventday"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/child_hc_date"
+            android:layout_below="@id/child_hc_date"
+            android:layout_marginBottom="4dp"
+            android:gravity="right"
+            android:text="2014/07/21"
+            android:textColor="@color/istar_h" />
+
+        <TextView
+            android:id="@+id/child_hc_touwei"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/child_hc_eventday"
+            android:gravity="right"
+            android:text="20"
+            android:textColor="@color/istar_h" />
+
+        <TextView
+            android:id="@+id/child_hc_xiongwei"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/child_hc_touwei"
+            android:gravity="right"
+            android:text="30"
+            android:textColor="@color/istar_h" />
+    </RelativeLayout>
+
+</RelativeLayout>

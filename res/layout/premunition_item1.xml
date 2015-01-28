@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layoutrelat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/growth_titlebg"
+        android:contentDescription="@string/no_comment" >
+
+        <TextView
+            android:id="@+id/texttitle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:text="预防接种"
+            android:textColor="@color/istar_g"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/premun_datetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/texttitle"
+            android:background="@drawable/entry_time_cont"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:gravity="center_vertical|right"
+            android:paddingRight="12dp"
+            android:text="2014/01/01"
+            android:textColor="@color/istar_h"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

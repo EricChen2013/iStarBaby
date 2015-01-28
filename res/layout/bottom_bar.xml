@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/darkgray" />
+
+    <LinearLayout
+        android:id="@+id/bottom_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="39.5dp"
+        android:background="@color/istar_n"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingTop="1dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/bottom_btn_list"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:contentDescription="@string/no_comment"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/monitor_tab_list" />
+
+            <TextView
+                android:id="@+id/bottom_text_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="监护器列表"
+                android:textColor="@color/istar_g"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/bottom_btn_event"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:contentDescription="@string/no_comment"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/monitor_tab_event" />
+
+            <TextView
+                android:id="@+id/bottom_text_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="事件"
+                android:textColor="@color/istar_g"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/bottom_btn_photo"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:contentDescription="@string/no_comment"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/monitor_tab_gallery" />
+
+            <TextView
+                android:id="@+id/bottom_text_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="影像快照"
+                android:textColor="@color/istar_g"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/bottom_btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:contentDescription="@string/no_comment"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/monitor_tab_add" />
+
+            <TextView
+                android:id="@+id/bottom_text_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="新增监护器"
+                android:textColor="@color/istar_g"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

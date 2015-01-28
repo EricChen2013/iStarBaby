@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.leature.istarbaby"
+    android:versionCode="1"
+    android:versionName="1.2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="cn.leature.istarbaby.sliverApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cn.leature.istarbaby.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.login.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.login.TermOfService"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.Version_Update_Notification"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.GuideActivity"
+            android:label="@string/title_activity_Guide"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.daily.DailyListActivity"
+            android:label="@string/title_activity_daily_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.daily.DailyPostActivity"
+            android:label="@string/title_activity_daily_post"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.daily.DailyImageActivity"
+            android:label="@string/title_activity_daily_image"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.daily.SelectPhotoListActivity"
+            android:label="@string/title_activity_select_photo_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.daily.DailyDetailActivity"
+            android:label="@string/title_activity_daily_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.daily.DailyEditActivity"
+            android:label="@string/title_activity_daily_edit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.daily.SelectPhotosActivity"
+            android:label="@string/title_activity_select_photos"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.gallery.GalleryActivity"
+            android:label="@string/title_activity_gallery"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.gallery.GalleyShowActivity"
+            android:label="@string/title_activity_galley_show" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.questions.QuestionListActivity"
+            android:label="@string/title_activity_question_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.child.ChildAddActivity"
+            android:label="@string/title_activity_child_add"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.child.ChildrenActivity"
+            android:label="@string/title_activity_child_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.child.ChildEditActivity"
+            android:label="@string/title_activity_child_edit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.child.ChildAlbumActivity"
+            android:label="@string/title_activity_child_album"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.login.RegistrationActivity"
+            android:label="@string/title_activity_registration"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.login.RegistrationAuthActivity"
+            android:label="@string/title_activity_registration_auth"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.login.RegistrationUserActivity"
+            android:label="@string/title_activity_registration_user"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.login.RegistrationSubmitActivity"
+            android:label="@string/title_activity_registration_submit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.child.FamilyActivity"
+            android:label="@string/title_activity_family"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.child.ChildDetailActivity"
+            android:label="@string/title_activity_child_edit_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.child.ChildHwActivity"
+            android:label="@string/title_activity_child_hw"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.child.ChildTxActivity"
+            android:label="@string/title_activity_child_tx"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.GuideFromMenuActivity"
+            android:label="@string/title_activity_child_tx"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.login.PasswordFindActivity"
+            android:label="@string/title_activity_fround_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.login.PasswordSubmitActivity"
+            android:label="@string/title_activity_pass_word_submit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.questions.QuestionCatalogActivity"
+            android:label="@string/title_activity_question_catalog"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.questions.QuestionDetailActivity"
+            android:label="@string/title_activity_question_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.setting.SettingUpActivity"
+            android:label="@string/title_activity_setting_up"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.setting.SettingPreferenceActivity"
+            android:label="@string/title_activity_setting_preference"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.setting.SettingProfileActivity"
+            android:label="@string/title_activity_setting_up_item"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.setting.SettingEditActivity"
+            android:label="@string/title_activity_setting_edit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.setting.SettingAboutAppActivity"
+            android:label="@string/title_activity_feed_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.setting.SettingFeedbackActivity"
+            android:label="@string/title_activity_feed_status"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.child.PremunitionActivity"
+            android:label="@string/title_activity_immunity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.child.Premunition_Edit_Activity"
+            android:label="@string/title_activity_premunition__edit_activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.info.CropImageActivity"
+            android:label="@string/title_activity_premunition__edit_activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.daily.DailyPreunEditActivity"
+            android:label="@string/title_activity_preun_edit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.monitor.MonitorListActivity"
+            android:label="@string/title_activity_monitor"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.monitor.MonitorAddActivity"
+            android:label="@string/title_activity_monitor_add"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.monitor.MonitorLiveViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_monitor_live_view" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.monitor.MipcaActivityCapture"
+            android:label="@string/title_activity_monitor_qrscan"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.monitor.MonitorSettingsActivity"
+            android:label="@string/title_activity_monitor_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.monitor.MonitorManageActivity"
+            android:label="@string/title_activity_monitor_advanced_setting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.monitor.MonitorPhotoActivity"
+            android:label="@string/title_activity_monitor_photo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.monitor.MonitorEventActivity"
+            android:label="@string/title_activity_monitor_event"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.monitor.MonitorEventDetailActivity"
+            android:label="@string/title_activity_event_item"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.monitor.MonitorFragmentActivity"
+            android:label="@string/title_activity_fragment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.monitor.MonitorWifiActivity"
+            android:label="@string/title_activity_monitorwifi"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="cn.leature.istarbaby.monitor.MonitorListenService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.leature.istarbaby.monitor.listenservice" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="cn.leature.istarbaby.monitor.MonitorTimeZoneActivity"
+            android:label="@string/title_activity_monitor_time_zone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/title_activity_setting_recommend"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="育儿宝" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.setting.SettingMySurfaceActivity"
+            android:label="@string/title_activity_setting_my_surface"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.setting.SettingFriendsActivity"
+            android:label="@string/title_activity_setting_friends"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.setting.SettingNewServerActivity"
+            android:label="@string/title_activity_setting_new_server"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.monitor.MonitorAddSettingActivity"
+            android:label="@string/title_activity_monitor_camera_setting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.monitor.MonitorPlaybackActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_monitor_playback" >
+        </activity>
+
+        <receiver
+            android:name="cn.leature.istarbaby.setting.AppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1103489184" />
+                <!-- 100380359 1103489184 222222 -->
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.tencent.sample.AppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="cn.leature.istarbaby.friend.FriendListActivity"
+            android:label="@string/title_activity_friend_list" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.friend.FriendSearchActivity"
+            android:label="@string/title_activity_friend_seek" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.friend.FriendDetailAddActivity"
+            android:label="@string/title_activity_friends_detail" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.friend.FriendManageActivity"
+            android:label="@string/title_activity_friend_manage" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.friend.FriendGroupMoveActivity"
+            android:label="@string/title_activity_move_group" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.friend.FriendCanversationActivity"
+            android:label="@string/title_activity_friend_canversation" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.friend.FriendGroupManageActivity"
+            android:label="@string/title_activity_friend_edit" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.friend.FriendDetailActivity"
+            android:label="@string/title_activity_friend_detail" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.friend.FriendShareMonitorActivity"
+            android:label="@string/title_activity_share_video" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.monitor.MonitorShareListActivity"
+            android:label="@string/title_activity_monitor_camera_fx" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.monitor.MonitorAddFriendActivity"
+            android:label="@string/title_activity_monitor_add_friend_fx" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.friend.FriendChangeGroupActivity"
+            android:label="@string/title_activity_friend_change_group" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.friend.ChangeGroupActivity"
+            android:label="@string/title_activity_change_group" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.friend.FriendMemoNameActivity"
+            android:label="@string/title_activity_friend_memo_name" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.friend.FriendAddSendActivity"
+            android:label="@string/title_activity_friend_add_send" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.friend.FriendGroupSelectActivity"
+            android:label="@string/title_activity_friend_group_select" >
+        </activity>
+        <activity
+            android:name="cn.leature.istarbaby.friend.FriendDetailSelfActivity"
+            android:label="@string/title_activity_friend_my_detail" >
+        </activity>
+    </application>
+
+</manifest>

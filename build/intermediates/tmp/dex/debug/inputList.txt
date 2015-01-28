@@ -1,0 +1,15 @@
+D:\20150127\iStarBaby\build\intermediates\classes\debug
+D:\20150127\iStarBaby\build\intermediates\pre-dexed\debug\mta-sdk-1.6.2-cdcf5895ea8d355558ab9b35c4f40e04c7bce649.jar
+D:\20150127\iStarBaby\build\intermediates\pre-dexed\debug\weibosdkcore-40e688f2d2b99e54d40f35c685f322658d93ee54.jar
+D:\20150127\iStarBaby\build\intermediates\pre-dexed\debug\libammsdk-d4d3acf794347bb1c78d8d8d12d3e65de3d38042.jar
+D:\20150127\iStarBaby\build\intermediates\pre-dexed\debug\jsoup-1.7.3-03f4de51b33b5140c50e7264d6d9955ed2a6a450.jar
+D:\20150127\iStarBaby\build\intermediates\pre-dexed\debug\zxing-be72d8a8bb1e20d2f2e314c61dcbb37a7307773d.jar
+D:\20150127\iStarBaby\build\intermediates\pre-dexed\debug\pinyin4j-2.5.0-355a262ab33dc1dc550b0e5f4c8af5b9e29125a3.jar
+D:\20150127\iStarBaby\build\intermediates\pre-dexed\debug\universal-image-loader-8b66791bc26c21399acb808e258c57026aa7a6a8.jar
+D:\20150127\iStarBaby\build\intermediates\pre-dexed\debug\android-support-v4-e53c903f60bce3744a90fdab889d0b2c587cc994.jar
+D:\20150127\iStarBaby\build\intermediates\pre-dexed\debug\open_sdk_r4346-2a5fa98f1675331954c8f400cd5954b8b77270df.jar
+D:\20150127\iStarBaby\build\intermediates\pre-dexed\debug\armeabi-425a5cd162703b119e3bc05362144b143caf8613.jar
+D:\20150127\iStarBaby\build\intermediates\pre-dexed\debug\x86-940d78346a918a16844bcfa51b740d0b2aea39c8.jar
+D:\20150127\iStarBaby\build\intermediates\pre-dexed\debug\armeabi-v7a-bf750dba93bbb3aeafc8a769b670fc54ac9e3926.jar
+D:\20150127\iStarBaby\build\intermediates\pre-dexed\debug\mips-a20c55065ea731b93c205338cad55cb95f1dc25a.jar
+D:\20150127\iStarBaby\build\intermediates\pre-dexed\debug\jsoup-1.7.3-javadoc-f9cf3502a16632b4b6a2dd7a1191f3808b7dd54b.jar

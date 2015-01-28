@@ -1,0 +1,53 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true" >
+
+    <item
+        android:drawable="@drawable/spinner_xhdpi_1"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/spinner_xhdpi_2"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/spinner_xhdpi_3"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/spinner_xhdpi_4"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/spinner_xhdpi_5"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/spinner_xhdpi_6"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/spinner_xhdpi_7"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/spinner_xhdpi_8"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/spinner_xhdpi_9"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/spinner_xhdpi_10"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/spinner_xhdpi_11"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/spinner_xhdpi_12"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/spinner_xhdpi_13"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/spinner_xhdpi_14"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/spinner_xhdpi_15"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/spinner_xhdpi_16"
+        android:duration="200"/>
+
+</animation-list>

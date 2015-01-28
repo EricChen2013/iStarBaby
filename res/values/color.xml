@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF6A6A</color>
+    <color name="black">#FF000000</color>
+    <color name="silver">#00FFFF00</color>
+    <color name="gray">#FF808080</color>
+    <color name="darkgray">#FFA9A9A9</color>
+    <color name="blue">#000000FF</color>
+    <color name="lightblue">#D1EEEE</color>
+    <color name="skyblue">#86D3EF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="silvergray">#FFC8C8C8</color>
+    <color name="gl_background">#737373</color>
+    <color name="istar_a">#ff625533</color>
+    <color name="istar_b">#ffcb6161</color>
+    <color name="istar_c">#ffdeb127</color>
+    <color name="istar_d">#ff5ca3af</color>
+    <color name="istar_e">#ff81aa4f</color>
+    <color name="istar_f">#ff93773a</color>
+    <color name="istar_g">#ff7b6f4e</color>
+    <color name="istar_h">#ff625555</color>
+    <color name="istar_i">#ffc0c0c0</color>
+    <color name="istar_j">#ffffffff</color>
+    <color name="istar_k">#ffcd853f</color>
+    <color name="istar_l">#ff654700</color>
+    <color name="istar_m">#ffe3e1da</color>
+    <color name="istar_n">#fff3f4f4</color>
+    <color name="istar_x">#55000000</color>
+    <color name="istar_y">#ffeaeaea</color>
+    <color name="istar_z">#ffeae7df</color>
+    <color name="istar_link">#ff011ffc</color>
+    <color name="translucence">#40000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <drawable name="transparent_background">#00000000</drawable>
+
+</resources>

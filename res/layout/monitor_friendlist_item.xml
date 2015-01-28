@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp" >
+
+    <ImageView
+        android:id="@+id/monitor_friendlist_snapshot"
+        android:layout_width="74dp"
+        android:layout_height="54dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/monitor_list_image_border"
+        android:contentDescription="@string/no_comment"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/monitor_friendlist_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/monitor_friendlist_snapshot"
+        android:gravity="center_vertical"
+        android:textColor="@color/istar_g"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/monitor_friendlist_status"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/monitor_friendlist_name"
+        android:layout_below="@id/monitor_friendlist_name"
+        android:gravity="center_vertical"
+        android:textColor="@color/istar_h"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/monitor_friendlist_uid"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/monitor_friendlist_name"
+        android:layout_below="@id/monitor_friendlist_status"
+        android:gravity="center_vertical"
+        android:textColor="@color/istar_i"
+        android:textSize="12sp" />
+
+</RelativeLayout>

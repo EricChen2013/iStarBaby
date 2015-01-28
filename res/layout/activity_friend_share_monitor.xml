@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/istar_z" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/headerbg_trans"
+            android:contentDescription="@string/no_comment"
+            android:scaleType="fitCenter" />
+
+        <ListView
+            android:id="@+id/sharevideo_lisetview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/istar_g"
+            android:dividerHeight="0.5dp" >
+        </ListView>
+    </LinearLayout>
+
+    <include layout="@layout/title_bar" />
+
+</FrameLayout>

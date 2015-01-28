@@ -1,0 +1,2 @@
+INDEX VERSION 1.126+E:\eclipse_r22.04\workspace\iStarBaby03\.metadata\.plugins\org.eclipse.jdt.core
+3183245762.index

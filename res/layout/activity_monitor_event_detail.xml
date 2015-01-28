@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/istar_z"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/headerbg_trans"
+            android:contentDescription="@string/no_comment"
+            android:scaleType="fitCenter" />
+
+        <cn.leature.istarbaby.view.XListView
+            android:id="@+id/monitor_eventitem_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.66"
+            android:gravity="center"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="2dp" >
+        </cn.leature.istarbaby.view.XListView>
+    </LinearLayout>
+
+    <include layout="@layout/title_bar" />
+
+</FrameLayout>

@@ -1,0 +1,615 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/istar_z"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/headerbg_trans"
+                android:contentDescription="@string/no_comment"
+                android:scaleType="fitCenter" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/setting_item_click_all"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="密码设置"
+                    android:textColor="@color/istar_g"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginTop="8dip"
+                    android:background="@drawable/div_02"
+                    android:contentDescription="@string/no_comment" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dip" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="旧密码"
+                        android:textColor="@color/istar_g"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/monitor_olddevpwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/text_field"
+                        android:capitalize="characters"
+                        android:hint="@string/input_hint"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColor="@color/istar_h"
+                        android:textColorHint="@color/istar_i"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="新密码"
+                        android:textColor="@color/istar_g"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/monitor_devpwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/text_field"
+                        android:capitalize="characters"
+                        android:hint="@string/input_hint"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColor="@color/istar_h"
+                        android:textColorHint="@color/istar_i"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="新密码确认"
+                        android:textColor="@color/istar_g"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/monitor_devpwd_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/text_field"
+                        android:capitalize="characters"
+                        android:hint="@string/input_hint"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColor="@color/istar_h"
+                        android:textColorHint="@color/istar_i"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/monitor_devpwd_modify"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/login_password_btn"
+                    android:enabled="false"
+                    android:text="修改密码"
+                    android:textColor="@color/istar_x"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.100000024dip"
+                    android:layout_marginTop="4dip"
+                    android:background="#ffffffff"
+                    android:contentDescription="@string/no_comment" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/setting_item_click_all"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wi-Fi设置"
+                    android:textColor="@color/istar_g"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginTop="8dip"
+                    android:background="@drawable/div_02"
+                    android:contentDescription="@string/no_comment" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:gravity="top"
+                        android:text="SSID："
+                        android:textColor="@color/istar_g"
+                        android:textSize="17sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/monitor_wifi_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="获取中..."
+                            android:textColor="@color/istar_h"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/monitor_wificonn_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="已连接"
+                            android:textColor="@color/istar_i"
+                            android:textSize="16sp"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/monitor_wifi_select"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/login_password_btn"
+                    android:enabled="false"
+                    android:text="设置Wi-Fi网络"
+                    android:textColor="@color/istar_x"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.100000024dip"
+                    android:layout_marginTop="4dip"
+                    android:background="#ffffffff"
+                    android:contentDescription="@string/no_comment" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/setting_item_click_all"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="动作警告"
+                    android:textColor="@color/istar_g"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginTop="8dip"
+                    android:background="@drawable/div_02"
+                    android:contentDescription="@string/no_comment" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="动作提醒级别"
+                        android:textColor="@color/istar_g"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/monitor_action_level"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="-"
+                        android:textColor="@color/istar_h"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <SeekBar
+                    android:id="@+id/monitor_action_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.0"
+                        android:gravity="center_vertical"
+                        android:text="仅检测较大移动"
+                        android:textColor="@color/istar_g"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.0"
+                        android:gravity="right|center_vertical"
+                        android:text="检测细微移动"
+                        android:textColor="@color/istar_g"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/monitor_motion_detect"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_password_btn"
+                    android:text="修改警告设置"
+                    android:textColor="@color/istar_x"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.100000024dip"
+                    android:layout_marginTop="4dip"
+                    android:background="#ffffffff"
+                    android:contentDescription="@string/no_comment" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/setting_item_click_all"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="视频设置"
+                    android:textColor="@color/istar_g"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginTop="8dip"
+                    android:background="@drawable/div_02"
+                    android:contentDescription="@string/no_comment" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="视频质量："
+                            android:textColor="@color/istar_g"
+                            android:textSize="17sp" />
+
+                        <Spinner
+                            android:id="@+id/spinner1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:drawSelectorOnTop="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="影像翻转："
+                            android:textColor="@color/istar_g"
+                            android:textSize="17sp" />
+
+                        <Spinner
+                            android:id="@+id/spinner2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="12dp"
+                            android:drawSelectorOnTop="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="环境模式："
+                            android:textColor="@color/istar_g"
+                            android:textSize="17sp" />
+
+                        <Spinner
+                            android:id="@+id/spinner3"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="12dp"
+                            android:drawSelectorOnTop="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/monitor_video_modeset"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_password_btn"
+                    android:enabled="false"
+                    android:text="修改视频设置"
+                    android:textColor="@color/istar_x"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.100000024dip"
+                    android:layout_marginTop="4dip"
+                    android:background="#ffffffff"
+                    android:contentDescription="@string/no_comment" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/setting_item_click_all"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="录像设置"
+                    android:textColor="@color/istar_g"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.100000024dip"
+                    android:layout_marginTop="4dip"
+                    android:background="@drawable/div_02"
+                    android:contentDescription="@string/no_comment" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="录像模式："
+                        android:textColor="@color/istar_g"
+                        android:textSize="17sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="12dp"
+                        android:drawSelectorOnTop="true" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_record_mode"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_password_btn"
+                    android:enabled="false"
+                    android:text="修改录像设置"
+                    android:textColor="@color/istar_x"
+                    android:textSize="18sp" >
+                </Button>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.100000024dip"
+                    android:layout_marginTop="4dip"
+                    android:background="#ffffffff"
+                    android:contentDescription="@string/no_comment" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/setting_item_click_all"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SD卡信息"
+                    android:textColor="@color/istar_g"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.100000024dip"
+                    android:layout_marginTop="4dip"
+                    android:background="@drawable/div_02"
+                    android:contentDescription="@string/no_comment" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="存储空间大小"
+                        android:textColor="@color/istar_g"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/monitor_record_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="center_vertical"
+                        android:text="-"
+                        android:textColor="@color/istar_h"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="可用空间大小"
+                        android:textColor="@color/istar_g"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/monitor_record_free"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="center_vertical"
+                        android:text="-"
+                        android:textColor="@color/istar_h"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_sdcard"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_password_btn"
+                    android:enabled="false"
+                    android:text="格式化 SD卡"
+                    android:textColor="@color/istar_x"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="(格式化指令将会清除SD卡内所有数据)"
+                    android:textColor="@color/istar_b"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/title_bar" />
+
+</FrameLayout>

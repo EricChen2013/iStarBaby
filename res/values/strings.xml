@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 定义空字符串 -->
+    <string name="no_comment" />
+    <!-- 应用名 -->
+    <string name="app_name">育儿宝</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_Guide">GuideActivity</string>
+    <string name="title_activity_daily_list">DailyListActivity</string>
+    <string name="title_activity_daily_post">DailyPostActivity</string>
+    <string name="title_activity_daily_image">DailyImageActivity</string>
+    <string name="title_activity_select_photo_list">SelectPhotoListActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_test_main">TestMainActivity</string>
+    <string name="title_activity_daily_detail">DailyDetailActivity</string>
+    <string name="title_activity_daily_edit">DailyEditActivity</string>
+    <string name="title_activity_select_photos">SelectPhotosActivity</string>
+    <string name="title_activity_gallery">GalleryActivity</string>
+    <string name="title_activity_galley_show">GalleyShowActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_question_list">QuestionListActivity</string>
+    <string name="title_activity_child_add">ChildAddActivity</string>
+    <string name="title_activity_child_detail">ChildDetailActivity</string>
+    <string name="title_activity_child_edit">ChildEditActivity</string>
+    <string name="title_activity_child_album">ChildAlbumActivity</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_registration_auth">RegistrationAuthActivity</string>
+    <string name="title_activity_registration_user">RegistrationUserActivity</string>
+    <string name="title_activity_registration_submit">RegistrationSubmitActivity</string>
+    <string name="title_activity_family">FamilyActivity</string>
+    <string name="title_activity_monitor">MonitorActivity</string>
+    <string name="ani_time">250</string>
+    <string name="ani_time2">500</string>
+    <string name="title_activity_hw">HwActivity</string>
+    <string name="title_activity_child_edit_detail">ChildEditDetailActivity</string>
+    <!-- 定义字符串 -->
+    <string name="input_hint">请输入</string>
+    <string name="num_hint">请输入数字</string>
+    <string name="g_hint">0.0</string>
+    <string name="title_activity_child_hw">ChildHwActivity</string>
+    <string name="title_activity_child_tx">ChildTxActivity</string>
+
+    <!-- 上拉下拉刷新 -->
+
+    <string name="hello">Hello World, XListViewActivity!</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="title_activity_fround_password">FroundPasswordActivity</string>
+    <string name="title_activity_pass_word_submit">PassWordSubmitActivity</string>
+    <string name="title_activity_question_catalog">QuestionCatalogActivity</string>
+    <string name="title_activity_question_detail">QuestionDetailActivity</string>
+    <string name="title_activity_setting_up">SettingUpActivity</string>
+    <string name="title_activity_setting_up_item">SettingUpItemActivity</string>
+    <string name="title_activity_setting_preference">Setting_PreferenceActivity</string>
+    <string name="title_activity_setting_edit">SettingEditActivity</string>
+    <string name="title_activity_feed_detail">FeedDetailActivity</string>
+    <string name="title_activity_feed_status">FeedStatusActivity</string>
+    <string name="title_activity_immunity">PremunitionActivity</string>
+    <string name="title_activity_premunition__edit_activity">Premunition_Edit_Activity</string>
+    <string name="title_activity_monitor_add">MonitorAddActivity</string>
+    <string name="title_activity_monitor_live_view">MonitorLiveViewActivity</string>
+    <string name="gl_choose_title">请选择图片</string>
+    <string name="gl_wait">请稍等</string>
+    <string name="title_activity_preun_edit">DailyPreunEditActivity</string>
+    <!-- 二维码扫描 -->
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="title_activity_monitor_qrscan">MonitorQRScanActivity</string>
+    <string name="title_activity_monitor_settings">MonitorSettingsActivity</string>
+    <string name="title_activity_monitor_advanced_setting">MonitorAdvancedSettingActivity</string>
+    <string name="popup_menu_item1">室内模式(50hz)</string>
+    <string name="popup_menu_item2">室内模式(60hz)</string>
+    <string name="popup_menu_item3">室外模式</string>
+    <string name="popup_menu_item4">夜间模式</string>
+    <string name="title_activity_monitor_photo">MonitorPhotoActivity</string>
+    <string name="title_activity_monitor_event">MonitorEventActivity</string>
+    <string name="title_activity_event_item">EventItemActivity</string>
+    <string name="title_activity_fragment">FragmentActivity</string>
+    <string name="title_activity_monitorwifi">MonitorWifiActivity</string>
+    <string name="title_activity_monitor_time_zone">MonitorTimeZoneActivity</string>
+    <string name="title_activity_monitor_recommend">MonitorRecommendActivity</string>
+    <string name="title_activity_setting_recommend">SettingRecommendActivity</string>
+    <string name="title_activity_setting_my_surface">SettingMySurfaceActivity</string>
+    <string name="title_activity_setting_friends">SettingFriendsActivity</string>
+    <string name="title_activity_setting_new_server">SettingNewServerActivity</string>
+    <string name="title_activity_monitor_camera_setting">MonitorCameraSettingActivity</string>
+    <string name="title_activity_monitor_playback">MonitorPlaybackActivity</string>
+    <string name="app_back">返回</string>
+    <string name="app_ok">确定</string>
+    <string name="app_cancel">取消</string>
+    <string name="app_continue">继续</string>
+    <string name="app_tip">提示</string>
+    <string name="app_send">发送</string>
+    <string name="app_set">设置</string>
+    <string name="app_save">保存</string>
+    <string name="app_delete">删除</string>
+    <string name="app_nextstep">下一步</string>
+    <string name="app_prevstep">上一步</string>
+    <string name="app_finish">完成</string>
+    <string name="app_find">查找</string>
+    <string name="app_edit">编辑</string>
+    <string name="app_share">分享</string>
+    <string name="send_text_default">这段文字发送自微信SDK示例程序</string>
+    <string name="weibosdk_demo_share_webpage_template">【%1$s】（分享自 WeiboSDKDemo %2$s）</string>
+    <string name="weibosdk_demo_app_url">https://github.com/mobileresearch/weibo_android_sdk/blob/master/WeiboSDKDemo.apk</string>
+    <string name="weibosdk_demo_share_webpage_demo">新浪新闻</string>
+    <string name="weibosdk_share_webpage_title">分享iStar育儿宝</string>
+    <string name="weibosdk_share_webpage_desc">我发现一个好玩的app，能够全程记录宝宝成长，你也快来试一下吧。</string>
+    <string name="weibosdk_share_webpage_url">http://www.leature.cn/m/Download.aspx</string>
+    <string name="title_activity_friend_list">FriendListActivity</string>
+    <string name="title_activity_friend_seek">FriendSeekActivity</string>
+    <string name="title_activity_friends_detail">FriendsDetailActivity</string>
+    <string name="title_activity_friend_manage">FriendManageActivity</string>
+    <string name="title_activity_move_group">MoveGroupActivity</string>
+    <string name="title_activity_friend_canversation">FriendCanversationActivity</string>
+    <string name="title_activity_friend_edit">FriendEditActivity</string>
+    <string name="title_activity_friend_detail">FriendDetailActivity</string>
+    <string name="title_activity_share_video">ShareVideoActivity</string>
+    <string name="title_activity_monitor_camera_fx">MonitorCameraFXActivity</string>
+    <string name="title_activity_monitor_add_friend_fx">MonitorAddFriendFxActivity</string>
+    <string name="title_activity_friend_change_group">FriendChangeGroupActivity</string>
+    <string name="title_activity_change_group">ChangeGroupActivity</string>
+
+    <string-array name="countries">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbajan</item>
+        <item>Bahamas</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bermuda</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Botswana</item>
+        <item>Brazil</item>
+        <item>Brunei Darussalam</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Colombia</item>
+        <item>Costa Rica</item>
+        <item>Cuba</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Democratic Republic Congo</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominican Republic</item>
+        <item>East Timor</item>
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El Salvador</item>
+        <item>England</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        <item>Faroe Islands</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>French Polynesia</item>
+        <item>Gambia</item>
+        <item>Georgia (Sakartvelo)</item>
+        <item>Germany</item>
+        <item>Gabon</item>
+        <item>Ghana</item>
+        <item>Greece</item>
+        <item>Greenland - Kalaallit Nunaat</item>
+        <item>Grenada</item>
+        <item>Gouadeloupe</item>
+        <item>Guam</item>
+        <item>Guatemala</item>
+        <item>Guernsey</item>
+        <item>Guyana</item>
+        <item>Guyane</item>
+        <item>Haiti</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hrvatska (Croatia)</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jordan</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Korea Republic</item>
+        <item>Kosovo</item>
+        <item>Kurdistan</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+        <item>Laos</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libyan Arab Jamahiriya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Macau</item>
+        <item>Macedonia</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Islands</item>
+        <item>Mauritania</item>
+        <item>Martinique</item>
+        <item>Mauritius</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Moldova</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+        <item>Namibia</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>Netherlands Antilles</item>
+        <item>New Caledonia</item>
+        <item>New Zealand (Aotearoa)</item>
+        <item>Nicaragua</item>
+        <item>Nigeria</item>
+        <item>Niue</item>
+        <item>Norfolk Island</item>
+        <item>Northern Ireland</item>
+        <item>Northern Mariana Islands</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Palestina</item>
+        <item>Panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Portugal</item>
+        <item>Puerto Rico</item>
+        <item>Qatar</item>
+        <item>Reunion</item>
+        <item>Romania</item>
+        <item>Russian Federation (AsianPart)</item>
+        <item>Russian Federation (European Part)</item>
+        <item>Rwanda</item>
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>Samoa (American Samoa)</item>
+        <item>Samoa (Western Samoa)</item>
+        <item>San Marino</item>
+        <item>Saudi Arabia</item>
+        <item>Scotland</item>
+        <item>Senegal</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapore</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item>Somalia</item>
+        <item>Somaliland</item>
+        <item>South Africa</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>Sudan</item>
+        <item>Suriname</item>
+        <item>Svalbard and Jan Mayen</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Syrian Arab Republic</item>
+        <item>Taiwan</item>
+        <item>Tanzania</item>
+        <item>Thailand</item>
+        <item>Tibet</item>
+        <item>Togo</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turkmenistan</item>
+        <item>Turks and Caicos Islands</item>
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>Uruguay</item>
+        <item>USA</item>
+        <item>Uzbekistan</item>
+        <item>Vatican City State - Holy See</item>
+        <item>Venezuela</item>
+        <item>Viet Nam</item>
+        <item>Virgin Islands (British)</item>
+        <item>Virgin Islands (U.S.)</item>
+        <item>Wales</item>
+        <item>Yemen</item>
+        <item>Yugoslavia</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+
+    <string name="title_activity_friend_memo_name">FriendMemoNameActivity</string>
+    <string name="title_activity_friend_add_send">FriendAddSendActivity</string>
+    <string name="title_activity_friend_group_select">FriendGroupSelectActivity</string>
+    <string name="title_activity_friend_my_detail">FriendMyDetailActivity</string>
+
+</resources>

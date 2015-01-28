@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/friendpopwindow_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/istar_z"
+    tools:context=".FriendListActivity" >
+
+    <Button
+        android:id="@+id/friendlistlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/headerbg_trans"
+            android:contentDescription="@string/no_comment"
+            android:scaleType="fitCenter" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dip"
+            android:background="@color/gl_background" />
+
+        <ExpandableListView
+            android:id="@+id/expandableListView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:groupIndicator="@null" >
+        </ExpandableListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dip"
+            android:background="@color/gl_background" />
+    </LinearLayout>
+
+    <include layout="@layout/title_bar" />
+
+</FrameLayout>

@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/istar_z"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/btn_mycamera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/monitor_list_myfriend"
+            android:gravity="center"
+            android:text="我的监护器"
+            android:textColor="@color/istar_g"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.25dip"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/btn_friendcamera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/monitor_list_myfriend"
+            android:gravity="center"
+            android:text="好友"
+            android:textColor="@color/istar_g"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:background="@color/gray" />
+
+    <ListView
+        android:id="@+id/monitor_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/istar_g"
+        android:dividerHeight="0.5dp"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true" />
+
+</LinearLayout>

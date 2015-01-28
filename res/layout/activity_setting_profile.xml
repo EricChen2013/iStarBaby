@@ -1,0 +1,246 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_repeat" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp" >
+
+        <ImageView
+            android:id="@+id/settingchild_icon"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_icon_frame"
+            android:contentDescription="@string/no_comment"
+            android:scaleType="fitCenter"
+            android:src="@drawable/noimage" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/settingchild_icon"
+            android:gravity="left|center_vertical"
+            android:text="姓名"
+            android:textColor="@color/istar_g"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/Settingname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView12"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/settingchild_icon"
+            android:background="@drawable/ic"
+            android:ems="6"
+            android:focusable="false"
+            android:gravity="center"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/istar_h"
+            android:textColorHint="@color/istar_i"
+            android:textSize="18sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Settingname"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/settingchild_icon"
+            android:gravity="left|center_vertical"
+            android:text="出生日期"
+            android:textColor="@color/istar_g"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/settingbirthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView001"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/settingchild_icon"
+            android:background="@drawable/ic"
+            android:ems="6"
+            android:focusable="false"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/istar_h"
+            android:textColorHint="@color/istar_i"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/settinggender"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_below="@id/settingbirthday"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/settingchild_icon"
+            android:background="@color/istar_z"
+            android:ems="8"
+            android:focusable="false"
+            android:gravity="center"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textColor="@color/istar_h"
+            android:textColorHint="@color/istar_i"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/gender_layout"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_alignLeft="@+id/settingbirthday"
+            android:layout_below="@+id/settingbirthday"
+            android:layout_marginTop="4dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/setting_boy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/no_comment"
+                android:scaleType="fitCenter"
+                android:src="@drawable/radio1_btn" />
+
+            <TextView
+                android:id="@+id/setting_textboy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:layout_toRightOf="@id/setting_boy"
+                android:paddingLeft="4dp"
+                android:text="男性"
+                android:textColor="@color/istar_g"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/setting_girl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/setting_textboy"
+                android:contentDescription="@string/no_comment"
+                android:scaleType="fitCenter"
+                android:src="@drawable/radio1_btn" />
+
+            <TextView
+                android:id="@+id/setting_textgirl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:layout_toRightOf="@id/setting_girl"
+                android:paddingLeft="4dp"
+                android:text="女性"
+                android:textColor="@color/istar_g"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:stretchColumns="0,1" >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="电话号码"
+            android:textColor="@color/istar_g"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/ic"
+            android:focusable="false"
+            android:maxLength="11"
+            android:numeric="integer"
+            android:paddingLeft="4dp"
+            android:textColor="@color/istar_h"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="电子邮箱"
+            android:textColor="@color/istar_g"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/email_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/ic"
+            android:focusable="false"
+            android:maxLength="25"
+            android:paddingLeft="4dp"
+            android:singleLine="true"
+            android:textColor="@color/istar_h"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="地址"
+            android:textColor="@color/istar_g"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/ic"
+            android:focusable="false"
+            android:maxLength="50"
+            android:paddingLeft="4dp"
+            android:singleLine="true"
+            android:textColor="@color/istar_h"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/monitor_list_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/istar_g"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/monitor_list_status"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/monitor_list_name"
+            android:layout_below="@id/monitor_list_name"
+            android:gravity="center_vertical"
+            android:textColor="@color/istar_h"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/monitor_list_more"
+            android:layout_width="8dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:contentDescription="@string/no_comment"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ab_forward" />
+    </RelativeLayout>
+
+</LinearLayout>

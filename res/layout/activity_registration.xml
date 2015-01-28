@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/istar_z"
+    tools:context=".RegistrationActivity" >
+
+    <RelativeLayout
+        android:id="@+id/titleBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/title_bar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleBarLayout"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/userid_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView1"
+            android:gravity="center"
+            android:text="你已获得用户号码"
+            android:textColor="@color/istar_x"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/user_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userid_hint"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="用户号码"
+            android:textColor="@color/istar_a"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/login_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_account"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="该账户已经与同号码的手机成功绑定，你也可以通过短信验证登录。"
+            android:textColor="@color/istar_x"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/registratin_btn"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/login_hint"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/login_password_btn"
+            android:gravity="center"
+            android:text="进入iStarBaby"
+            android:textColor="@color/istar_h"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

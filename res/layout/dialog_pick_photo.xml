@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:background="@drawable/cream_dialog_bg"
+    android:orientation="vertical"
+    android:padding="12dp" >
+
+    <Button
+        android:id="@+id/image_capture"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/dialog_selector"
+        android:text="照相"
+        android:textColor="@color/istar_g" />
+
+    <Button
+        android:id="@+id/image_album"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dialog_selector"
+        android:text="从图片中选择"
+        android:textColor="@color/istar_g" />
+
+    <Button
+        android:id="@+id/image_quxiao"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dialog_selector"
+        android:text="取消"
+        android:textColor="@color/istar_b" />
+
+</LinearLayout>

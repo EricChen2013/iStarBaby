@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/detail_listview_on"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/listview_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/lview_userIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_icon_frame"
+            android:contentDescription="@string/no_comment"
+            android:scaleType="fitCenter"
+            android:src="@drawable/noimage" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp" >
+
+            <TextView
+                android:id="@+id/lview_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/istar_h"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/lview_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/lview_name"
+                android:layout_below="@id/lview_name"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/time"
+                android:contentDescription="@string/no_comment"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/lview_timediff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lview_name"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/lview_timer"
+                android:textColor="@color/istar_h"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lview_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/diary_bg"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:padding="@dimen/listview_padding"
+            android:textColor="@color/istar_h"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <include layout="@layout/daily_list_childdata" />
+
+</LinearLayout>

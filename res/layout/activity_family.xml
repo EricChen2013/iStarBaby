@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_repeat"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/headerbg_trans"
+            android:contentDescription="@string/no_comment"
+            android:scaleType="fitCenter" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="90dp"
+                    android:contentDescription="@string/no_comment"
+                    android:src="@drawable/t" />
+
+                <FrameLayout
+                    android:id="@+id/frameLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toLeftOf="@id/imageView1" >
+
+                    <ImageView
+                        android:id="@+id/family_father_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/parents_pic_bg"
+                        android:contentDescription="@string/no_comment"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/child_father"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="papa"
+                        android:textColor="@color/istar_a"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/child_fathername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginBottom="2dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/istar_a"
+                        android:textSize="12sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/family_relativelayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/frameLayout1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/imageView1" >
+
+                    <ImageView
+                        android:id="@+id/family_mather_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/parents_pic_bg"
+                        android:contentDescription="@string/no_comment"
+                        android:paddingBottom="9dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="9dp"
+                        android:paddingTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/child_mather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="mama"
+                        android:textColor="@color/istar_a"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/child_mathername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginBottom="2dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/istar_a"
+                        android:textSize="12sp" />
+                </FrameLayout>
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageView1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="15dp"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:id="@+id/family_child_layout_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="6dp" >
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <ImageView
+                    android:id="@+id/family_dev"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/horizontalScrollView1"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="@string/no_comment"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/div_01" />
+
+                <Button
+                    android:id="@+id/family_child_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/family_dev"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/famiy_add_btn"
+                    android:text="宝宝登录"
+                    android:textColor="@color/istar_a"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <include layout="@layout/title_bar" />
+
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageButton
+        android:id="@+id/slidingmenu_icon_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/bg_menu_icon"
+        android:contentDescription="@string/no_comment"
+        android:scaleType="fitXY"
+        android:src="@drawable/noimage_child" />
+
+    <TextView
+        android:id="@+id/slidingmenu_icon_text"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</RelativeLayout>

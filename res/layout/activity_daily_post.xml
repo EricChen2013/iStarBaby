@@ -1,0 +1,297 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_repeat" >
+
+    <RelativeLayout
+        android:id="@+id/titleBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/title_bar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleBarLayout"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/post_label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:text="日记•写真"
+            android:textColor="@color/istar_a"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/post_datetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/entry_time_cont"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:gravity="center_vertical|right"
+            android:paddingRight="12dp"
+            android:text="2014/01/01"
+            android:textColor="@color/istar_h"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/layouts_hwtx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/post_label1"
+            android:layout_below="@id/post_datetext"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/no_comment"
+                    android:src="@drawable/etry_growicon_hi" />
+
+                <EditText
+                    android:id="@+id/shengao_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:drawableRight="@drawable/unit_cm"
+                    android:ems="6"
+                    android:hint="@string/g_hint"
+                    android:maxLength="5"
+                    android:numeric="decimal"
+                    android:singleLine="true"
+                    android:textColor="@color/istar_h"
+                    android:textColorHint="@color/istar_i"
+                    android:textSize="18sp" >
+                </EditText>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:contentDescription="@string/no_comment"
+                    android:src="@drawable/etry_growicon_he" />
+
+                <EditText
+                    android:id="@+id/touwei_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:drawableRight="@drawable/unit_cm"
+                    android:ems="6"
+                    android:hint="@string/g_hint"
+                    android:maxLength="5"
+                    android:numeric="decimal"
+                    android:singleLine="true"
+                    android:textColor="@color/istar_h"
+                    android:textColorHint="@color/istar_i"
+                    android:textSize="18sp" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/no_comment"
+                    android:src="@drawable/etry_growicon_we" />
+
+                <EditText
+                    android:id="@+id/tizhong_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:drawableRight="@drawable/unit_kg"
+                    android:ems="6"
+                    android:hint="@string/g_hint"
+                    android:maxLength="5"
+                    android:numeric="decimal"
+                    android:singleLine="true"
+                    android:textColor="@color/istar_h"
+                    android:textColorHint="@color/istar_i"
+                    android:textSize="18sp" >
+                </EditText>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:contentDescription="@string/no_comment"
+                    android:src="@drawable/etry_growicon_ch" />
+
+                <EditText
+                    android:id="@+id/xiongwei_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:drawableRight="@drawable/unit_cm"
+                    android:ems="6"
+                    android:hint="@string/g_hint"
+                    android:maxLength="5"
+                    android:numeric="decimal"
+                    android:singleLine="true"
+                    android:textColor="@color/istar_h"
+                    android:textColorHint="@color/istar_i"
+                    android:textSize="18sp" >
+                </EditText>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/div_03"
+                android:contentDescription="@string/no_comment"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/post_user_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@id/post_label1"
+            android:layout_below="@id/layouts_hwtx"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_icon_frame"
+            android:contentDescription="@string/no_comment"
+            android:scaleType="fitCenter"
+            android:src="@drawable/noimage" />
+
+        <EditText
+            android:id="@+id/detailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_alignTop="@id/post_user_icon"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/post_user_icon"
+            android:background="@drawable/text_field"
+            android:ems="10"
+            android:gravity="left|top"
+            android:hint="请输入最多500个字"
+            android:inputType="textMultiLine"
+            android:maxLength="500"
+            android:textColor="@color/istar_h"
+            android:textColorHint="@color/istar_i"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/daily_upload_image"
+            android:layout_width="58dp"
+            android:layout_height="59dp"
+            android:layout_alignLeft="@id/post_label1"
+            android:layout_below="@id/detailEditText"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/entry_photo"
+            android:contentDescription="@string/no_comment" />
+
+        <FrameLayout
+            android:id="@+id/horizontal_layout"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_alignLeft="@id/detailEditText"
+            android:layout_alignTop="@id/daily_upload_image"
+            android:layout_toRightOf="@id/daily_upload_image"
+            android:orientation="horizontal" >
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/daily_post_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="6dp" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/add_photo_start"
+                    android:contentDescription="@string/no_comment"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/add_photo_end"
+                    android:contentDescription="@string/no_comment"
+                    android:scaleType="fitCenter" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/post_show_image"
+            android:layout_width="58dp"
+            android:layout_height="59dp"
+            android:layout_alignLeft="@id/post_label1"
+            android:layout_below="@id/daily_upload_image"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/selector_post_show"
+            android:contentDescription="@string/no_comment"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/post_show_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/detailEditText"
+            android:layout_alignTop="@id/post_show_image"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/post_show_image"
+            android:background="@drawable/tagentry_bg"
+            android:gravity="center"
+            android:text="tag"
+            android:textColor="@color/istar_h"
+            android:textSize="14sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

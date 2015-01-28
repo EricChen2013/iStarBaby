@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="videolevel">
+        <item>最高</item>
+        <item>高</item>
+        <item>中</item>
+        <item>低</item>
+        <item>最低</item>
+    </string-array>
+    <string-array name="videomode">
+        <item>正常</item>
+        <item>垂直翻转</item>
+        <item>水平翻转(镜像)</item>
+        <item>垂直及水平翻转</item>
+    </string-array>
+    <string-array name="videoenviroment">
+        <item>室内模式(50hz)</item>
+        <item>室内模式(60hz)</item>
+        <item>室外模式</item>
+        <item>夜间模式</item>
+    </string-array>
+
+
+</resources>

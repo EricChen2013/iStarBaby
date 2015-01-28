@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_repeat" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/include1"
+        android:padding="8dp" >
+
+        <EditText
+            android:id="@+id/statusedit"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/text_field"
+            android:ems="10"
+            android:gravity="left|top"
+            android:hint="请输入最多500个字"
+            android:inputType="textMultiLine"
+            android:maxLength="500"
+            android:textColor="@color/istar_a"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/publish"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@+id/statusedit"
+            android:layout_below="@+id/statusedit"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_reg_auth_btn"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

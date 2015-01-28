@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/istar_z"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/monitor_item1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_into_btn"
+            android:drawableLeft="@drawable/button_silence"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:text="静音"
+            android:textColor="@color/istar_g" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/no_comment"
+            android:scaleType="fitCenter"
+            android:src="@drawable/div_02" />
+
+        <TextView
+            android:id="@+id/monitor_item2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_into_btn"
+            android:drawableLeft="@drawable/button_listen"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:text="监听"
+            android:textColor="@color/istar_b" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/no_comment"
+            android:scaleType="fitCenter"
+            android:src="@drawable/div_02" />
+
+        <TextView
+            android:id="@+id/monitor_item3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_into_btn"
+            android:drawableLeft="@drawable/button_speak"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:text="通话"
+            android:textColor="@color/istar_h" />
+    </LinearLayout>
+
+</ScrollView>

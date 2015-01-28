@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/istar_z"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/titleBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/title_bar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/registration_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleBarLayout"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp" >
+
+        <EditText
+            android:id="@+id/registratin_username"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@id/textView12"
+            android:background="@drawable/text_field"
+            android:ems="6"
+            android:hint="请输入昵称"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/istar_h"
+            android:textColorHint="@color/istar_i"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/registratin_name_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registratin_username"
+            android:layout_marginTop="8dp"
+            android:text="建议填写你的真实姓名，让你的朋友更容易认出你。此昵称以后可以随时修改。"
+            android:textColor="@color/istar_x"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/registratin_submit"
+            android:layout_width="120dp"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/registratin_name_label"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/login_password_btn"
+            android:text="完成"
+            android:textColor="@color/istar_link"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

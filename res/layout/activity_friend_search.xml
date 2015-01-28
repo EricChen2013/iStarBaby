@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/istar_z"
+    tools:context=".FriendGroupMoveActivity" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/include1"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/gl_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/search_eventview"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/seek_friendname"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:focusable="true"
+                android:hint="账号/手机号码"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:numeric="integer"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/istar_h"
+                android:textColorHint="@color/istar_i"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/seek_delete"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/yuan"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/silver"
+                android:button="@null"
+                android:text="搜索"
+                android:textColor="@color/istar_link"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/gl_background" />
+    </LinearLayout>
+
+</RelativeLayout>

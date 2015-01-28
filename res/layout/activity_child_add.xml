@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_repeat"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:contentDescription="@string/no_comment"
+                android:scaleType="fitXY"
+                android:src="@drawable/edit_grow_ttl" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="能够查阅宝宝月龄相应的信息"
+                    android:textColor="@color/istar_a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView2"
+                    android:layout_marginTop="16dp"
+                    android:text="出生年月日【必须】"
+                    android:textColor="@color/istar_g"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/manage_manage_birthday_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/birthday"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="-4dp"
+                    android:layout_toRightOf="@id/birthday"
+                    android:background="@drawable/text_field"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/input_hint"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/istar_h"
+                    android:textColorHint="@color/istar_i"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/childadd_div01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/manage_manage_birthday_edit"
+                    android:layout_marginTop="12dp"
+                    android:contentDescription="@string/no_comment"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/div_03" />
+
+                <TextView
+                    android:id="@+id/childadd_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/childadd_div01"
+                    android:layout_marginTop="16dp"
+                    android:text="性别【必须】"
+                    android:textColor="@color/istar_g"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/child_add_boy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/manage_manage_birthday_edit"
+                    android:layout_alignTop="@id/childadd_sex"
+                    android:layout_marginTop="-4dp"
+                    android:layout_toRightOf="@id/childadd_sex"
+                    android:contentDescription="@string/no_comment"
+                    android:src="@drawable/baby_sex_boy" />
+
+                <ImageView
+                    android:id="@+id/child_add_girl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/child_add_boy"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toRightOf="@id/child_add_boy"
+                    android:contentDescription="@string/no_comment"
+                    android:src="@drawable/baby_sex_girl" />
+
+                <ImageView
+                    android:id="@+id/childadd_div02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/child_add_boy"
+                    android:layout_marginTop="12dp"
+                    android:contentDescription="@string/no_comment"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/div_03" />
+
+                <TextView
+                    android:id="@+id/childadd_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/childadd_div02"
+                    android:layout_marginTop="16dp"
+                    android:text="名字【必须】"
+                    android:textColor="@color/istar_g"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/manage_manage_name_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/manage_manage_birthday_edit"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/childadd_name"
+                    android:layout_marginTop="-4dp"
+                    android:layout_toRightOf="@id/childadd_name"
+                    android:background="@drawable/text_field"
+                    android:ems="20"
+                    android:hint="@string/input_hint"
+                    android:maxLength="10"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/istar_h"
+                    android:textColorHint="@color/istar_i"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/childadd_div03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/manage_manage_name_edit"
+                    android:layout_marginTop="12dp"
+                    android:contentDescription="@string/no_comment"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/div_03" />
+
+                <TextView
+                    android:id="@+id/childadd_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/childadd_div03"
+                    android:layout_marginTop="16dp"
+                    android:text="宝宝排行【必须】"
+                    android:textColor="@color/istar_g"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/manage_baby_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/manage_manage_birthday_edit"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignRight="@+id/child_add_girl"
+                    android:layout_alignTop="@id/childadd_no"
+                    android:layout_marginTop="-4dp"
+                    android:layout_toRightOf="@id/childadd_name"
+                    android:background="@drawable/text_field"
+                    android:ems="2"
+                    android:hint="@string/num_hint"
+                    android:maxLength="2"
+                    android:numeric="integer"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/istar_h"
+                    android:textColorHint="@color/istar_i"
+                    android:textSize="16sp" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/childadd_div04"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/manage_baby_no"
+                    android:layout_marginTop="12dp"
+                    android:contentDescription="@string/no_comment"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/div_03" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/manage_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/login_start"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

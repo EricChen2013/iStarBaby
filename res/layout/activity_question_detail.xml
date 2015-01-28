@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:paddingBottom="1dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="1dp" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/headerbg_trans"
+            android:contentDescription="@string/no_comment"
+            android:scaleType="fitCenter" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <FrameLayout
+                    android:id="@+id/framentlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="40dp" >
+
+                    <LinearLayout
+                        android:id="@+id/question_detail_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </FrameLayout>
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/canback_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="#EAEAEA"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:id="@+id/image_backward"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_into_btn"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/back_icon" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/sep_view1"
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/image_backward"
+                    android:background="#D1D1D1" />
+
+                <LinearLayout
+                    android:id="@+id/image_forward"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/sep_view1"
+                    android:background="@drawable/bg_into_btn"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/forward_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/image_refresh"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_into_btn"
+                    android:gravity="center"
+                    android:padding="8dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/refresh_icon" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include_layout"
+        layout="@layout/title_bar" />
+
+</FrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="2dp" >
+
+        <TextView
+            android:id="@+id/premunition_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/lab_teiki"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/premunition_itme_name"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/premunition_item_text"
+            android:layout_alignTop="@+id/premunition_item_text"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/premunition_item_text"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/istar_g"
+            android:textSize="16sp" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/premunition_itme_name"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/premunition_item_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

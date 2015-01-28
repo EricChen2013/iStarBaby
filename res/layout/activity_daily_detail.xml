@@ -1,0 +1,162 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/daily_detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_repeat" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/headerbg_trans"
+                    android:contentDescription="@string/no_comment"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_photo_repeat" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/daily_detail_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/detail_title_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/photo_count" >
+
+                <ImageView
+                    android:id="@+id/detail_userIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/bg_icon_frame"
+                    android:contentDescription="@string/no_comment"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/noimage" />
+
+                <TextView
+                    android:id="@+id/dailyDetailUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_toRightOf="@id/detail_userIcon"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/istar_a"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/detail_photo_counts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:gravity="center_vertical"
+                    android:text=" / 1 Photos"
+                    android:textColor="@color/istar_a"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/detail_photo_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/detail_photo_counts"
+                    android:gravity="center_vertical"
+                    android:text="1"
+                    android:textColor="@color/istar_a"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/detail_title_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/detail_user_icon2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/bg_icon_frame"
+                    android:contentDescription="@string/no_comment"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/noimage" />
+
+                <TextView
+                    android:id="@+id/daily_detail_user2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_toRightOf="@id/detail_user_icon2"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/istar_a"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/dailyDetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/diary_bg"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/listview_padding"
+                    android:textColor="@color/istar_a"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <include layout="@layout/daily_list_childdata" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/div_03"
+                    android:contentDescription="@string/no_comment"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/include_layout"
+        layout="@layout/title_bar" />
+
+</FrameLayout>

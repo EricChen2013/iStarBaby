@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_repeat"
+    tools:context=".Premunition_Edit_Activity" >
+
+    <include
+        android:id="@+id/include_layout"
+        android:layout_alignParentBottom="true"
+        layout="@layout/title_bar" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include_layout"
+        android:background="@drawable/edit_born_ttl"
+        android:contentDescription="@string/no_comment" />
+    <ListView
+        android:id="@+id/immunity_edit_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageButton1"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+</RelativeLayout>

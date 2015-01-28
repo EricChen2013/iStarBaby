@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="4dp"
+        android:paddingTop="2dp" >
+
+        <ImageView
+            android:id="@+id/premunition_item_text2"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/no_comment"
+            android:gravity="center_vertical"
+            android:src="@drawable/lab_teiki" />
+
+        <RelativeLayout
+            android:id="@+id/layout3"
+            android:layout_width="115dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/premunition_item_text2" >
+
+            <TextView
+                android:id="@+id/premunition_itme_name2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:maxLines="2"
+                android:textColor="@color/istar_g"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/premunition_itme_imageview2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/no_comment"
+                android:gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bste_bc1_infulsame"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/layout3"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/premunition_item_image2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

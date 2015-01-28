@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/no_comment"
+            android:src="@drawable/headerbg_trans" />
+
+        <TextView
+            android:id="@+id/add_grouptext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/monitor_list_myfriend"
+            android:drawableLeft="@drawable/sym_action_add"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:text=" 添加分组"
+            android:textColor="@color/istar_g"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" >
+
+            <cn.leature.utils.dslv.DragSortListView
+                android:id="@+id/group_dslistview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/title_bar" />
+
+</FrameLayout>

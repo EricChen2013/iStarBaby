@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_repeat" >
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_setting"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/myface_textview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/setting_item_click_top"
+            android:drawableLeft="@drawable/share_qrcode"
+            android:drawableRight="@drawable/ab_forward"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp"
+            android:text="   二维码"
+            android:textColor="@color/istar_g"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/istar_i" />
+
+        <TextView
+            android:id="@+id/duanxin_textview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/setting_item_click_middle"
+            android:drawableLeft="@drawable/share_duanxin"
+            android:drawableRight="@drawable/ab_forward"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp"
+            android:text="   手机短信"
+            android:textColor="@color/istar_g"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/istar_i" />
+
+        <TextView
+            android:id="@+id/wxfrend_textview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/setting_item_click_middle"
+            android:drawableLeft="@drawable/share_weixin"
+            android:drawableRight="@drawable/ab_forward"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp"
+            android:text="   微信好友"
+            android:textColor="@color/istar_g"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/istar_i" />
+
+        <TextView
+            android:id="@+id/wxallfrends_textview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/setting_item_click_middle"
+            android:drawableLeft="@drawable/share_wx_timeline"
+            android:drawableRight="@drawable/ab_forward"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp"
+            android:text="   微信朋友圈"
+            android:textColor="@color/istar_g"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/istar_i" />
+
+        <TextView
+            android:id="@+id/qqshare_textview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/setting_item_click_middle"
+            android:drawableLeft="@drawable/share_qq"
+            android:drawableRight="@drawable/ab_forward"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp"
+            android:text="   QQ好友"
+            android:textColor="@color/istar_g"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/istar_i" />
+
+        <TextView
+            android:id="@+id/weibo_textview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/setting_item_click_bottom"
+            android:drawableLeft="@drawable/share_sina"
+            android:drawableRight="@drawable/ab_forward"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp"
+            android:text="   新浪微博"
+            android:textColor="@color/istar_g"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/title_bar" />
+
+</RelativeLayout>

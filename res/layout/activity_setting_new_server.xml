@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_repeat"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".SettingNewServerActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+
+        <include
+            android:id="@+id/include1"
+            layout="@layout/title_bar" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/include1" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="6dp"
+                android:text="收件人："
+                android:textColor="@color/istar_h"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/newserver_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_field"
+                android:textColor="@color/istar_h"
+                android:textSize="14sp" >
+            </EditText>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/message_content"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:gravity="left|top"
+                android:textColor="@color/istar_g"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="发送"
+                android:textColor="@color/istar_h"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_below="@id/relativeLayout1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/result_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_field"
+            android:ems="10"
+            android:gravity="left|top"
+            android:scrollbarStyle="outsideInset"
+            android:stackFromBottom="true" />
+    </LinearLayout>
+
+</RelativeLayout>
